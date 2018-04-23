@@ -12,7 +12,7 @@ heimat = "Erde"
 print (heimat, "an World: ", "Hallo")
 
 # Eingabe / liest Text(!) von der Konsole ein
-wer = input("Und wer bist du?")
+wer = input("Und wer bist du? ")
 
 # und gibt den Text wieder aus
 if (wer == "ich"):
@@ -26,13 +26,31 @@ print ("Aber die cooler Zahl ", int(lieblingszahl)+1, " mag ich noch mehr!")
 
 runden = input("Wie viele Runden sollen wir spielen? ")
 runden = int(runden)
+print("---------------------------------------------")
 
 for runde in range(1, runden+1):
     zufallszahl=random.randint(1,6)
+    zaehler1 = 0
+    zaehler2 = 0
 
     if (zufallszahl == 1 or zufallszahl == 3 or zufallszahl == 5):
         sieger="ich"
+        zaehler1=zaehler1+1
     else:
         sieger = "Computer"
+        zaehler2=zaehler2+1
     print("Runde ",runde, "von",runden,": Sieger:",sieger)
+    print("Gewuerfelte Zahl ist ",zufallszahl)
+
+    print("---------------------------------------------")
+
+if (zaehler1==zaehler2):
+    print("Unentschieden")
+elif(zaehler1<zaehler2):
+    print("Computer hat gewonnen")
+elif(zaehler1>zaehler2):
+    print("Du hast Gewonnen")
+
+
+
 print("Game Over.")
