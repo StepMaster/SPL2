@@ -28,11 +28,10 @@ print("---------------------------------------------")
 runden = input("Wie viele Runden sollen wir spielen? ")
 runden = int(runden)
 print("---------------------------------------------")
-
+zaehler1 = 0
+zaehler2 = 0
 for runde in range(1, runden+1):
     zufallszahl=random.randint(1,6)
-    zaehler1 = 0
-    zaehler2 = 0
 
     if (zufallszahl == 1 or zufallszahl == 3 or zufallszahl == 5):
         sieger="ich"
@@ -49,12 +48,8 @@ if (zaehler1==zaehler2):
     print("Unentschieden")
 elif(zaehler1<zaehler2):
     print("Computer hat gewonnen")
-
-    print("Der Computer hat ",int(zaehler2)-int(zaehler1), "x oefter gewonnen")
+    print("Der Computer hat ",int(zaehler2)-int(zaehler1),"x oefter gewonnen")
 elif(zaehler1>zaehler2):
     print("Du hast Gewonnen")
-    print("Du hast ",int(zaehler1)-int(zaehler2), "x oefter gewonnen")
-
-
-
+    print("Du hast ",int(zaehler1)-int(zaehler2),"x oefter gewonnen")
 print("Game Over.")
