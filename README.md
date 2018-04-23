@@ -2,7 +2,7 @@
 
 ## Laborinhalt für 23.04.2018
 
-## Wiederholung git
+### Wiederholung git
 
 * git Konfiguration anzeigen: *git config --list*
 * git Konfiguration ändern (Benutzername): *git config --global user.name <username>*
