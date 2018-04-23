@@ -13,17 +13,17 @@ while(gewonnen == False):
 
     if(zahl == Mysterie):
         gewonnen == True
+        print("Er hat ", counter, " Versuche gebraucht")
+        break
 
     elif(zahl < Mysterie):
-
         print("Zahl ist kleiner!")
-        zahl=int(zahl-(zahl/2))
-        print(zahl)
+        zahl=int(zahl/4*2)
+     
+        
 
     elif(zahl > Mysterie):
 
         print("Zahl ist groesser!")
-        zahl = int(zahl+(zahl/2))
-        print(zahl)
-
+        zahl = int((zahl/4*2)+zahl)
 
