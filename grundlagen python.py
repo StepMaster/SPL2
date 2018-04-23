@@ -49,8 +49,11 @@ if (zaehler1==zaehler2):
     print("Unentschieden")
 elif(zaehler1<zaehler2):
     print("Computer hat gewonnen")
+
+    print("Der Computer hat ",int(zaehler2)-int(zaehler1), "x oefter gewonnen")
 elif(zaehler1>zaehler2):
     print("Du hast Gewonnen")
+    print("Du hast ",int(zaehler1)-int(zaehler2), "x oefter gewonnen")
 
 
 
