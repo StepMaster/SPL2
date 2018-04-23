@@ -20,10 +20,11 @@ if (wer == "ich"):
 else:
     print("Hallo ",wer)
 
+print("---------------------------------------------")
 lieblingszahl = input("Was ist deine Lieblingszahl? ")
 print ("Super, ich mag die Zahl ", lieblingszahl)
 print ("Aber die cooler Zahl ", int(lieblingszahl)+1, " mag ich noch mehr!")
-
+print("---------------------------------------------")
 runden = input("Wie viele Runden sollen wir spielen? ")
 runden = int(runden)
 print("---------------------------------------------")
