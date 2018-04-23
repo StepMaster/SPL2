@@ -7,4 +7,14 @@
 * git Konfiguration anzeigen: *git config --list*
 * git Konfiguration ändern (Benutzername): *git config --global user.name <username>*
 * git Konfiguration ändern (E-Mail): *git config --global user.email <usermail>*
-* und überprüfen mit *git config --list*
+* und überprüfen mit *git config --list* 
+  
+
+### git Befehle (fuktionieren nur in einem git-Verzeichnis)
+
+* git status
+* git add <filename(s) oder *.*>
+* git commit -m "commit message"
+* git pull (um Änderungen vom Server zu holen)
+* git push (um Änderungen auf den Server zu laden)
+
