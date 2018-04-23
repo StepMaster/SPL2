@@ -1,5 +1,5 @@
 # grundlagen python.py
-
+import random
 # Kommentare erfoölgen mit hashtag
 
 # Ausgabe von Daten
@@ -24,3 +24,15 @@ lieblingszahl = input("Was ist deine Lieblingszahl? ")
 print ("Super, ich mag die Zahl ", lieblingszahl)
 print ("Aber die cooler Zahl ", int(lieblingszahl)+1, " mag ich noch mehr!")
 
+runden = input("Wie viele Runden sollen wir spielen? ")
+runden = int(runden)
+
+for runde in range(1, runden+1):
+    zufallszahl=random.randint(1,6)
+
+    if (zufallszahl == 1 or zufallszahl == 3 or zufallszahl == 5):
+        sieger="ich"
+    else:
+        sieger = "Computer"
+    print("Runde ",runde, "von",runden,": Sieger:",sieger)
+print("Game Over.")
